@@ -1,0 +1,31 @@
+#########################################
+Gamebase Console에서 프로젝트 설정
+#########################################
+
+Gamebase Console에 Google 인증정보를 추가하는 방법을 설명합니다.
+
+Google 인증정보 추가
+====================
+
+1. `TOAST Console로 이동 <https://console.toast.com>`_
+
+    1. 프로젝트선택
+    2. Game > Gamebase > 앱 카테고리 선택
+
+    .. image:: _static/image/3_1_1.png
+
+2. 수정 버튼을 선택합니다
+
+    .. image:: _static/image/3_1_2.png
+
+3. 인증정보 추가 버튼을 선택합니다
+
+    .. image:: _static/image/3_1_3.png
+
+4. 구글 인증정보를 입력하고 저장 버튼을 선택합니다
+
+    * Identity Provider : Google 선택
+    * Client Id : API 콘솔 프로젝트 설정 시 발급받은 ClientId 입력
+    * Secret Key : API 콘솔 프로젝트 설정 시 발급받은 ClientSecret 입력
+    
+    .. image:: _static/image/3_1_4.png

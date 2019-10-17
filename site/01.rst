@@ -1,0 +1,19 @@
+****
+개요
+****
+
+Gamebase에서는 Google 인증을 지원하고 있습니다
+
+이 코드 랩에서는 Google 인증정보를 추가하는 방법을 배울 수 있습니다.
+
+학습할 내용
+============
+
+* Google Play Console 설정하기
+* Gamebase Console에서 인증정보 추가하기
+
+준비물
+=======
+* `Gamebase Guest Login for Unity Android 토픽 학습 <http://forward.nhnent.com/hands-on-labs/gamebase.guest-auth-on-unity/index.html>`_
+* `Google 개발자 등록 <https://play.google.com/apps/publish/signup>`_
+* `TOAST 회원가입 <https://toast.com>`_

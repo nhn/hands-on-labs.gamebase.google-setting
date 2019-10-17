@@ -1,0 +1,120 @@
+###########################
+Google Play Console 설정
+###########################
+
+Google Play Console에 애플리케이션을 만드는 방법을 설명합니다.
+
+새 게임을 추가하고 연결된 앱에 애플리케이션을 등록하는 방법을 설명합니다.
+
+API 콘솔 프로젝트 설정에 사용자 인증 정보를 추가하는 방법을 설명합니다.
+
+
+애플리케이션 만들기
+======================
+
+    .. tip:: 
+
+        - App Bundle 등을 사용하기 위해 Google Play App Signing 을 하는 방법도 있으나, 이번 토픽에서는 다루지 않습니다.
+
+        - 자세한 내용은 아래 링크에서 확인하세요.
+
+            - `App signing by Google Play <https://developer.android.com/studio/publish/app-signing#app-signing-google-play>`_
+
+1. `Google Play Console로 이동 <https://play.google.com/apps/publish>`_
+
+2. Google Play Console에서 애플리케이션 만들기 버튼을 선택합니다
+
+    .. image:: _static/image/2_1_2.png
+
+3. 제목 입력 후 만들기 버튼을 선택합니다
+
+    .. image:: _static/image/2_1_3.png
+
+4. 앱 버전 카테고리에서 내부 테스트 트랙의 관리 버튼을 선택합니다
+
+    .. image:: _static/image/2_1_4.png
+
+5. 새 버전 출시하기 버튼을 선택합니다
+
+    .. image:: _static/image/2_1_5.png
+
+6. 선택 해제 버튼을 선택합니다
+
+    .. image:: _static/image/2_1_6.png
+
+7. 등록 해제하기 버튼을 선택합니다
+
+    .. image:: _static/image/2_1_7.png
+
+8. 파일 찾아보기 버튼을 선택하고 Gamebase Guest Login for Unity Android 토픽에서 빌드 한 apk 파일을 업로드합니다
+
+    .. image:: _static/image/2_1_8.png
+
+9. 하단의 저장 버튼을 선택하여 설정을 저장합니다.
+
+    .. image:: _static/image/2_1_9.png
+
+새 게임 추가
+======================
+
+    .. tip::
+
+        - 새 게임을 등록하지 않고 사용자 인증 정보를 설정하는 방법도 있지만 이번 토픽에서는 다루지 않습니다.
+
+1. 게임 서비스 카테고리에서 새 게임 추가 버튼을 선택합니다.
+
+    .. image:: _static/image/2_2_1.png
+
+2. 게임이름과 카테고리를 설정하고 계속 버튼을 선택합니다
+
+    .. image:: _static/image/2_2_2.png
+
+3. 연결된 앱 카테고리에서  Android 버튼을 선택합니다.
+
+    .. image:: _static/image/2_2_3.png
+
+4. 준비단계에서 입력한 package 이름 입력하고 저장하고 계속 버튼을 선택합니다
+
+    .. image:: _static/image/2_2_4.png
+
+5. 지금 앱 승인 버튼을 선택합니다.
+
+    .. image:: _static/image/2_2_5.png
+
+6. package 이름과 SHA1을 확인 후  확인 버튼을 선택합니다
+
+    .. image:: _static/image/2_2_6.png
+
+
+API 콘솔 프로젝트 설정
+=========================
+
+1. 게임 세부 정보로 카테고리 하단의 API 콘솔 프로젝트를 선택합니다
+
+    .. image:: _static/image/2_3_1.png
+
+2. OAuth 동의 화면 카테고리에서 승인된 도메인을 입력하고 저장 버튼을 선택합니다.
+
+    .. image:: _static/image/2_3_2.png
+
+3. 사용자 인증 정보 카테고리에서 사용자 인증정보 만들기 버튼을 선택합니다
+
+    .. image:: _static/image/2_3_3.png
+
+4. OAuth 클라이언트 ID 항목을 선택합니다
+
+    .. image:: _static/image/2_3_4.png
+
+5. 웹 애플리케이션을 선택합니다
+
+    .. image:: _static/image/2_3_5.png
+
+6. 승인된 리디렉션 URI를 입력하고 생성 버튼을 선택합니다 
+
+    .. image:: _static/image/2_3_6.png
+
+7. 생성된 인증 정보를 확인 합니다
+
+    * ClientId와 ClientSecret은 Gamebase Console에 인증정보를 추가하는데 필요하니 반드시 저장하고 외부로 노출되지 않도록 관리합니다.
+
+    .. image:: _static/image/2_3_7.png
