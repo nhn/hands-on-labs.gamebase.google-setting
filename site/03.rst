@@ -25,7 +25,7 @@ Google 인증정보 추가
 4. 구글 인증정보를 입력하고 저장 버튼을 선택합니다
 
     * Identity Provider : Google 선택
-    * Client Id : API 콘솔 프로젝트 설정 시 발급받은 ClientId 입력
-    * Secret Key : API 콘솔 프로젝트 설정 시 발급받은 ClientSecret 입력
+    * Client Id : API 콘솔 프로젝트 설정 시 발급받은 ClientId(클라이언트 ID) 입력
+    * Secret Key : API 콘솔 프로젝트 설정 시 발급받은 ClientSecret(클라이언트 보안 비밀) 입력
     
     .. image:: _static/image/3_1_4.png

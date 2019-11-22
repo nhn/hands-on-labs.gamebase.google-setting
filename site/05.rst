@@ -5,7 +5,7 @@ Gamebase Google Login
 Google Login 구현
 ===============================
 
-* Assets/NHN FORWARD/GamebaseSample/Script/Authentication/GamebaseAuthenticateSample.cs 파일의 OnLogin() 함수를 다음과 같이 수정
+* Assets/TOAST/Codelab/Gamebase/Scripts/Authentication/Sample.cs 파일의 OnLogin() 함수를 다음과 같이 수정
 
 .. code-block:: C#
 

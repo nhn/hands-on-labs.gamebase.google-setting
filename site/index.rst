@@ -5,7 +5,7 @@ Add Google IdP to Gamebase
 * 카테고리: API 
 * 레벨: 초급
 * 시간: 30분
-* 업데이트: 2019.10.16
+* 업데이트: 2019.11.21
 
 
 .. toctree:: 

@@ -14,6 +14,6 @@ Gamebase에서는 Google 인증을 지원하고 있습니다
 
 준비물
 =======
-* `Gamebase Guest Login for Unity Android 토픽 학습 <http://forward.nhnent.com/hands-on-labs/gamebase.guest-auth-on-unity/index.html>`_
+* `Gamebase Guest Login for Unity Android 토픽 학습 <https://forward.nhn.com/hands-on-labs/gamebase.guest-auth-on-unity/index.html>`_
 * `Google 개발자 등록 <https://play.google.com/apps/publish/signup>`_
 * `TOAST 회원가입 <https://toast.com>`_
