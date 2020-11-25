@@ -24,105 +24,99 @@ API 콘솔 프로젝트 설정에 사용자 인증 정보를 추가하는 방법
 
 2. Google Play Console에서 애플리케이션 만들기 버튼을 선택합니다
 
+    .. image:: _static/image/2_1_1.png
+
+3. 앱 이름 입력과 필요한 설정을 체크 후 만들기 버튼을 선택합니다
+
     .. image:: _static/image/2_1_2.png
 
-3. 제목 입력 후 만들기 버튼을 선택합니다
-
+4. Player 게임 서비스 설정하기
+    * Player 게임 서비스 -> 설정 및 관리 -> 설정 카테고리 선택합니다
+    * 아니요, 게임에서 Google API를 사용하지 않습니다를 선택합니다
+    * 게임 이름을 입력하고 만들기 버튼을 선택합니다
+    
     .. image:: _static/image/2_1_3.png
 
-4. 앱 버전 카테고리에서 내부 테스트 트랙의 관리 버튼을 선택합니다
 
-    .. image:: _static/image/2_1_4.png
+Google Cloud Platform 설정
+============================
 
-5. 새 버전 출시하기 버튼을 선택합니다
-
-    .. image:: _static/image/2_1_5.png
-
-6. 선택 해제 버튼을 선택합니다
-
-    .. image:: _static/image/2_1_6.png
-
-7. 등록 해제하기 버튼을 선택합니다
-
-    .. image:: _static/image/2_1_7.png
-
-8. 파일 찾아보기 버튼을 선택하고 Gamebase Guest Login for Unity Android 토픽에서 빌드 한 apk 파일을 업로드합니다
-
-    .. image:: _static/image/2_1_8.png
-
-9. 하단의 저장 버튼을 선택하여 설정을 저장합니다.
-
-    .. image:: _static/image/2_1_9.png
-
-새 게임 추가
-======================
-
-    .. tip::
-
-        - 새 게임을 등록하지 않고 사용자 인증 정보를 설정하는 방법도 있지만 이번 토픽에서는 다루지 않습니다.
-
-1. 게임 서비스 카테고리에서 새 게임 추가 버튼을 선택합니다.
+1. Google Cloud Platform에서 보기 버튼을 선택합니다
 
     .. image:: _static/image/2_2_1.png
 
-2. 게임이름과 카테고리를 설정하고 계속 버튼을 선택합니다
+2. OAuth 동의 화면 카테고리를 선택 후 User Type을 외부로 선택하고 만든기 버튼을 선택합니다
 
     .. image:: _static/image/2_2_2.png
 
-3. 연결된 앱 카테고리에서  Android 버튼을 선택합니다.
+3. 아래 항목을 입력하고 저장 후 계속 버튼을 선택합니다.
+    * 앱 이름
+    * 사용자 지원 이메일
+    * 승인된 도메인
+        * toast.com
+    * 개발자 연락처 정보
 
     .. image:: _static/image/2_2_3.png
-
-4. 준비단계에서 입력한 package 이름 입력하고 저장하고 계속 버튼을 선택합니다
-
     .. image:: _static/image/2_2_4.png
+    
 
-5. 지금 앱 승인 버튼을 선택합니다.
-
-    .. image:: _static/image/2_2_5.png
-
-6. package 이름과 SHA1을 확인 후  확인 버튼을 선택합니다
-
+4. 테스트 사용자를 등록하고  저장 후 계속 버튼을 선택합니다
     .. image:: _static/image/2_2_6.png
-
-
-API 콘솔 프로젝트 설정
-=========================
-
-1. 게임 세부 정보로 카테고리 하단의 API 콘솔 프로젝트를 선택합니다
-
-    .. image:: _static/image/2_3_1.png
-
-2. OAuth 동의 화면 카테고리에서 승인된 도메인을 입력하고 저장 버튼을 선택합니다.
-
-    - 승인받은 도메인
-        - toast.com
-
-    .. image:: _static/image/2_3_2.png
+    
+    * ADD USERS 버튼을 선택합니다
+    * 이메일을 입력하고 추가 버튼을 선택합니다
+        .. image:: _static/image/2_2_7.png    
     
 
-3. 사용자 인증 정보 카테고리에서 사용자 인증정보 만들기 버튼을 선택합니다
+5. 대시보드로 돌아가기 버튼을 선택합니다
 
-    .. image:: _static/image/2_3_3.png
+    .. image:: _static/image/2_2_8.png
 
-4. OAuth 클라이언트 ID 항목을 선택합니다
+6. 사용자 인증 정보를 추가 합니다
+    * 사용자 인증 정보 카테고리를 선택합니다
+    * 사용자 인증정보 만들기 버튼을 선택합니다
+    * OAuth 클라이언트 ID를 선택합니다
 
-    .. image:: _static/image/2_3_4.png
+    .. image:: _static/image/2_2_9.png
 
-5. 웹 애플리케이션을 선택합니다
+7. 웹 애플리케이션을 추가 합니다
+    * 애플리케이션 유형을 웹 애플리케이션으로 선택합니다
+    * 이름을 입력합니다
+    * 승인된 리디렉션 URL을 입력합니다
+        * https://id-gamebase.toast.com/oauth/callback
+    * 만들기 버튼을 선택합니다.
 
-    .. image:: _static/image/2_3_5.png
+    .. image:: _static/image/2_2_10.png
 
-6. 승인된 리디렉션 URI를 입력하고 생성 버튼을 선택합니다 
+8. OAuth 클라이언트 생성 완료
+    .. tip:: 
 
-    - 리디렉션 URI
-        - https://id-gamebase.toast.com/oauth/callback
+        - 클라이언트 ID와 클라이언트 보안 비밀번호는 Gamebase Console에 인증정보를 추가하는데 필요하니 반드시 저장하고 외부로 노출되지 않도록 관리합니다.
 
-    .. image:: _static/image/2_3_6.png    
-    
+    * 클라이언트 ID 확인
+    * 클라이언트 보안 비밀번호 확인
 
-7. 생성된 인증 정보를 확인 합니다
+    .. image:: _static/image/2_2_11.png
 
-    * ClientId(클라이언트 ID)와 ClientSecret(클라이언트 보안 비밀)은 Gamebase Console에 인증정보를 추가하는데 필요하니 반드시 저장하고 외부로 노출되지 않도록 관리합니다.
 
-    .. image:: _static/image/2_3_7.png
+9. 사용자 인증 정보를 추가 합니다
+    * 사용자 인증 정보 카테고리를 선택합니다
+    * 사용자 인증정보 만들기 버튼을 선택합니다
+    *OAuth 클라이언트 ID를 선택합니다
+
+    .. image:: _static/image/2_2_9.png
+
+9. Android 애플리케이션을 추가 합니다
+    * 애플리케이션 유형을 Android로 선택합니다
+    * 이름을 입력합니다
+    * 패키지 이름을 입력합니다
+    * SHA-1 인증서 디지털 지문은 입력합니다
+        * 생성방법은 아래 링크에서 확인하실 수 있습니다
+            * https://forward.nhn.com/2020/seoul/hands-on-labs/gamebase.guest-auth-on-unity/07.html#android-player
+    * 만들기 버튼을 선택합니다
+
+    .. image:: _static/image/2_2_12.png
+
+8. OAuth 클라이언트 생성 완료
+
+    .. image:: _static/image/2_2_13.png
