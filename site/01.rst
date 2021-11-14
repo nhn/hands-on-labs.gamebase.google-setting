@@ -2,18 +2,25 @@
 개요
 ****
 
-Gamebase에서는 Google 인증을 지원하고 있습니다
-
-이 코드 랩에서는 Google 인증정보를 추가하는 방법을 배울 수 있습니다.
+Gamebase는 Google, Facebook, Apple Game Center 외 게임에 필요한 다양한 외부 인증을 제공합니다.
+Gamebase를 이용하면 손쉽게 여러 개의 ID Provider(IdP)와 연동할 수 있으므로, 주요 IdP 인증 연동 스펙을 완벽하게 학습하지 않아도 됩니다.
 
 학습할 내용
-============
+===============================
 
-* Google Play Console 설정하기
-* Gamebase Console에서 인증정보 추가하기
+Android 플랫폼에서 Google 로그인을 진행하기 위해 필요한 설정과 Gamebase API들을 알아봅니다.
 
 준비물
-=======
-* `Gamebase Guest Login for Unity Android 토픽 학습 <https://forward.nhn.com/2020/seoul/hands-on-labs/gamebase.guest-auth-on-unity/index.html>`_
+===============================
+
+* 선행 학습
+
+  * `Gamebase 설치 </2021/hands-on-labs/gamebase.install-with-setting-tool/>`_
+  * `Android Guest 인증 </2021/hands-on-labs/gamebase.guest-auth-on-unity/>`_
+
 * `Google 개발자 등록 <https://play.google.com/apps/publish/signup>`_
-* `TOAST 회원가입 <https://toast.com>`_
+
+소스 코드
+===============================
+
+**Android Guest 인증** 에 이어 코딩을 진행합니다.

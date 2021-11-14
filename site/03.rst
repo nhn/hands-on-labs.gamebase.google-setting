@@ -1,31 +1,46 @@
 #########################################
-Gamebase Console에서 프로젝트 설정
+NHN Cloud Console 설정
 #########################################
 
-Gamebase Console에 Google 인증정보를 추가하는 방법을 설명합니다.
+NHN Cloud Console에 Google 인증정보를 추가하는 방법을 알아봅니다.
 
 Google 인증정보 추가
 ====================
 
-1. `TOAST Console로 이동 <https://console.toast.com>`_
+1. `NHN Cloud Console로 이동 <https://console.toast.com>`_
+2. 앱 기본 정보 수정
 
-    1. 프로젝트선택
-    2. Game > Gamebase > 앱 카테고리 선택
+  1. 프로젝트선택
 
-    .. image:: _static/image/3_1_1.png
+    .. image:: _static/image/console_select_project.png
 
-2. 수정 버튼을 선택합니다
+  2. **Menu > Game > Gamebase > 앱**
 
-    .. image:: _static/image/3_1_2.png
+    .. image:: _static/image/console_leftmenu.png
 
-3. 인증정보 추가 버튼을 선택합니다
+  3. Click **수정**
 
-    .. image:: _static/image/3_1_3.png
+    .. image:: _static/image/console_app_info.png
 
-4. 구글 인증정보를 입력하고 저장 버튼을 선택합니다
+  4. Click **저장**
 
-    * Identity Provider : Google 선택
-    * Client Id : API 콘솔 프로젝트 설정 시 발급받은 ClientId(클라이언트 ID) 입력
-    * Secret Key : API 콘솔 프로젝트 설정 시 발급받은 ClientSecret(클라이언트 보안 비밀) 입력
+    .. image:: _static/image/console_app_info_settings.png
+
+3. 인증 정보
+
+  1. Click **수정**
+
+    .. image:: _static/image/console_app_auth_info.png
+
+  2. Click **+**
+
+    .. image:: _static/image/console_app_auth_info_add.png
+
+  3. 구글 인증정보를 입력
+
+    * Identity Provider: Google
+    * Client ID: 이전 장에서 발급받은 웹 애플리케이션의 **클라이언트 ID**
+    * Secret Key: 이전 장에서 발급받은 웹 애플리케이션의 **클라이언트 보안 비밀번호**
+    * Click **저장**
     
-    .. image:: _static/image/3_1_4.png
+      .. image:: _static/image/console_app_auth_info_settings.png

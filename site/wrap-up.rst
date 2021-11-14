@@ -5,11 +5,9 @@
 학습한 내용
 =================
 
-* Googlle Play Console을 설정하고 Gamebase Console에 인증정보를 추가하는 방법에 대해 알아보았습니다.
-
+Android 플랫폼에서 Google 로그인을 진행하기 위해 필요한 설정과 Gamebase API들을 알아보았습니다.
 
 다음 단계
 =================
 
-* 결제
-* 푸쉬
+`Google Purchase </2021/hands-on-labs/gamebase.google-purchase/>`_

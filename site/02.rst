@@ -2,121 +2,169 @@
 Google Play Console 설정
 ###########################
 
-Google Play Console에 애플리케이션을 만드는 방법을 설명합니다.
-
-새 게임을 추가하고 연결된 앱에 애플리케이션을 등록하는 방법을 설명합니다.
-
-API 콘솔 프로젝트 설정에 사용자 인증 정보를 추가하는 방법을 설명합니다.
-
+* Google Play Console에서 애플리케이션을 만드는 방법을 알아봅니다.
+* 새 게임을 추가하고 연결된 앱에 애플리케이션을 등록하는 방법을 알아봅니다.
+* API 콘솔 프로젝트 설정에 사용자 인증 정보를 추가하는 방법을 알아봅니다.
 
 애플리케이션 만들기
 ======================
 
-    .. tip:: 
+.. tip:: 
 
-        - App Bundle 등을 사용하기 위해 Google Play App Signing 을 하는 방법도 있으나, 이번 토픽에서는 다루지 않습니다.
+  * App Bundle 등을 사용하기 위해 Google Play App Signing 을 하는 방법도 있으나, 이번 토픽에서는 다루지 않습니다.
+  * 자세한 내용은 `App signing by Google Play <https://developer.android.com/studio/publish/app-signing#app-signing-google-play>`_ 에서 확인하십시오.
 
-        - 자세한 내용은 아래 링크에서 확인하세요.
+1. `Google Play Console 이동 <https://play.google.com/apps/publish>`_
+2. Click **앱 만들기**
 
-            - `App signing by Google Play <https://developer.android.com/studio/publish/app-signing#app-signing-google-play>`_
+  .. image:: _static/image/2_1_1.png
 
-1. `Google Play Console로 이동 <https://play.google.com/apps/publish>`_
+3. 앱 세부정보 입력
 
-2. Google Play Console에서 애플리케이션 만들기 버튼을 선택합니다
-
-    .. image:: _static/image/2_1_1.png
-
-3. 앱 이름 입력과 필요한 설정을 체크 후 만들기 버튼을 선택합니다
-
+  * 앱 이름: HandsOnLab
+  * 기본 언어: 한국어 - ko-KR
+  * 앱 또는 게임: 게임
+  * 유료 또는 무료: 무료
+  * 모든 약관 동의
+  * Click **앱 만들기**
+    
     .. image:: _static/image/2_1_2.png
 
-4. Player 게임 서비스 설정하기
-    * Player 게임 서비스 -> 설정 및 관리 -> 설정 카테고리 선택합니다
-    * 아니요, 게임에서 Google API를 사용하지 않습니다를 선택합니다
-    * 게임 이름을 입력하고 만들기 버튼을 선택합니다
-    
+4. Play 게임 서비스 설정
+
+  1. **Menu > Play 게임 서비스 > 설정 및 관리 > 설정**
+  2. **아니요, 게임에서 Google API를 사용하지 않습니다** 선택
+  3. 게임 이름 입력: HandsOnLab
+  4. Click **만들기**
+  
     .. image:: _static/image/2_1_3.png
 
 
 Google Cloud Platform 설정
 ============================
 
-1. Google Cloud Platform에서 보기 버튼을 선택합니다
+1. OAuth 동의 화면 설정
+
+  1. Click **Google Cloud Platform에서 보기**
 
     .. image:: _static/image/2_2_1.png
 
-2. OAuth 동의 화면 카테고리를 선택 후 User Type을 외부로 선택하고 만든기 버튼을 선택합니다
-
+  2. **Menu > OAuth 동의 화면**
+  3. User Type: 외부
+  4. Click **만들기**
+  
     .. image:: _static/image/2_2_2.png
 
-3. 아래 항목을 입력하고 저장 후 계속 버튼을 선택합니다.
-    * 앱 이름
-    * 사용자 지원 이메일
-    * 승인된 도메인
-        * toast.com
-    * 개발자 연락처 정보
+  5. 앱 정보
 
-    .. image:: _static/image/2_2_3.png
-    .. image:: _static/image/2_2_4.png
-    
+    * 앱 이름: HandsOnLab
+    * 사용자 지원 이메일: 사용자 정보 입력
 
-4. 테스트 사용자를 등록하고  저장 후 계속 버튼을 선택합니다
-    .. image:: _static/image/2_2_6.png
-    
-    * ADD USERS 버튼을 선택합니다
-    * 이메일을 입력하고 추가 버튼을 선택합니다
-        .. image:: _static/image/2_2_7.png    
-    
+    .. image:: _static/image/google_console_app_info.png
 
-5. 대시보드로 돌아가기 버튼을 선택합니다
+  6. 승인된 도메인: toast.com
 
-    .. image:: _static/image/2_2_8.png
+    .. image:: _static/image/google_console_allow_domain.png
 
-6. 사용자 인증 정보를 추가 합니다
-    * 사용자 인증 정보 카테고리를 선택합니다
-    * 사용자 인증정보 만들기 버튼을 선택합니다
-    * OAuth 클라이언트 ID를 선택합니다
+  7. 개발자 연락처 정보: 사용자 정보 입력
 
-    .. image:: _static/image/2_2_9.png
+    .. image:: _static/image/google_console_developer_info.png
 
-7. 웹 애플리케이션을 추가 합니다
-    * 애플리케이션 유형을 웹 애플리케이션으로 선택합니다
-    * 이름을 입력합니다
-    * 승인된 리디렉션 URL을 입력합니다
-        * https://id-gamebase.toast.com/oauth/callback
-    * 만들기 버튼을 선택합니다.
+  8. Click **저장 후 계속**
+  
+2. 범위
 
-    .. image:: _static/image/2_2_10.png
+  1. 설정 없음
+  2. Click **저장 후 계속** 
 
-8. OAuth 클라이언트 생성 완료
+3. 테스트 사용자
+
+  1. Click **ADD USERS**
+
+    .. image:: _static/image/google_console_tester.png
+
+  2. 사용자 입력
+  3. Click **추가**
+
+    .. image:: _static/image/google_console_register_tester.png
+
+  4. 추가된 사용자 확인
+  5. Click **저장 후 계속**
+
+    .. image:: _static/image/google_console_tester_info.png
+
+
+4. 요약
+
+  1. 요약 정보 확인
+  2. Click **대시보드로 돌아가기**
+
+5. OAuth 클라이언트 ID 만들기(웹 애플리케이션)
+
+  1. **Menu > 사용자 인증 정보**
+  2. Click **사용자 인증정보 만들기**
+  3. Click **OAuth 클라이언트 ID**
+
+    .. image:: _static/image/google_console_user_auth_info.png
+
+  4. 설정값 추가
+  
+    * 애플리케이션 유형: 웹 애플리케이션
+    * 이름: 웹 클라이언트
+    * 승인된 리디렉션 URI
+
+      * https://id-gamebase.toast.com/oauth/callback
+  
+  5. Click **만들기**
+
+    .. image:: _static/image/google_console_oauth_client_id_web.png
+  
     .. tip:: 
 
-        - 클라이언트 ID와 클라이언트 보안 비밀번호는 Gamebase Console에 인증정보를 추가하는데 필요하니 반드시 저장하고 외부로 노출되지 않도록 관리합니다.
+      * 발급된 웹 애플리케이션의 **클라이언트 ID** 와 **클라이언트 보안 비밀번호** 는 다음 장 **Google 인증정보 추가** 에서 사용됩니다.
 
-    * 클라이언트 ID 확인
-    * 클라이언트 보안 비밀번호 확인
+        .. image:: _static/image/google_console_oauth_client_id_web_ok.png
 
-    .. image:: _static/image/2_2_11.png
+6. OAuth 클라이언트 ID 만들기(Android)
 
+  1. **Menu > 사용자 인증 정보**
+  2. Click **사용자 인증정보 만들기**
+  3. Click **OAuth 클라이언트 ID**
 
-9. 사용자 인증 정보를 추가 합니다
-    * 사용자 인증 정보 카테고리를 선택합니다
-    * 사용자 인증정보 만들기 버튼을 선택합니다
-    *OAuth 클라이언트 ID를 선택합니다
+    .. image:: _static/image/google_console_user_auth_info.png
 
-    .. image:: _static/image/2_2_9.png
+  4. 설정값 추가
+  
+    * 애플리케이션 유형: Android
+    * 이름: Android 클라이언트
+    * 패키지 이름: 
+    * SHA-1 인증서 디지털 지문 확인
 
-9. Android 애플리케이션을 추가 합니다
-    * 애플리케이션 유형을 Android로 선택합니다
-    * 이름을 입력합니다
-    * 패키지 이름을 입력합니다
-    * SHA-1 인증서 디지털 지문은 입력합니다
-        * 생성방법은 아래 링크에서 확인하실 수 있습니다
-            * https://forward.nhn.com/2020/seoul/hands-on-labs/gamebase.guest-auth-on-unity/07.html#android-player
-    * 만들기 버튼을 선택합니다
+      1. cmd 열기
+      2. cd 명령어를 사용하여 handsonlab.keystore 파일 저장 경로로 이동
+      3. keytool 명령어 입력
 
-    .. image:: _static/image/2_2_12.png
+        .. code-block::
 
-8. OAuth 클라이언트 생성 완료
+          keytool -list -v -keystore handsonlab.keystore
 
-    .. image:: _static/image/2_2_13.png
+        .. image:: _static/image/cmd_keystore.png
+
+    * 비밀번호: android
+    * SHA-1 인증서 디지털 지문 확인 후 추가
+
+  5. Click **만들기**
+
+    .. image:: _static/image/google_console_oauth_client_id_android.png
+
+7. Google Play Android Developer API
+
+  1. **Menu > 대시보드**
+  2. **제품 및 리소스 검색** 창에 **Google Play Android Developer API** 검색
+  3. Click **API**
+
+    .. image:: _static/image/google_console_search_api.png
+
+  4. Click **사용**
+
+    .. image:: _static/image/google_console_register_api.png
