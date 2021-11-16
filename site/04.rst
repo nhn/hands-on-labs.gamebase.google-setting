@@ -1,11 +1,12 @@
 #######################
-Gamebase Google Login
+Gamebase Code
 #######################
 
-Google Login 구현
+Google Login
 ===============================
 
-* Assets/TOAST/Codelab/Gamebase/Scripts/HandsOnLab/UserImplementation.cs 파일의 Login() 함수를 다음과 같이 수정
+1. Assets/TOAST/Codelab/Gamebase/Scripts/HandsOnLab/UserImplementation.cs 파일 열기
+2. Login() 메서드 수정
 
 .. code-block:: C#
 
@@ -37,7 +38,7 @@ Build & Run
   .. image:: _static/image/unity_build_and_run.png
 
 3. APK 파일 이름: gamebase-handsonlab.apk
-4. 디바이스에서 실행 확인
+4. 디바이스에서 실행
 5. Click **Initialize**
 6. Click **Login**
 

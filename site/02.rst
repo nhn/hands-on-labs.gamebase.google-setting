@@ -4,9 +4,9 @@ Google Play Console 설정
 
 * Google Play Console에서 애플리케이션을 만드는 방법을 알아봅니다.
 * 새 게임을 추가하고 연결된 앱에 애플리케이션을 등록하는 방법을 알아봅니다.
-* API 콘솔 프로젝트 설정에 사용자 인증 정보를 추가하는 방법을 알아봅니다.
+* Google Cloud Platform에서 사용자 인증 정보를 추가하는 방법을 알아봅니다.
 
-애플리케이션 만들기
+앱 만들기
 ======================
 
 .. tip:: 
@@ -19,22 +19,23 @@ Google Play Console 설정
 
   .. image:: _static/image/2_1_1.png
 
-3. 앱 세부정보 입력
+3. 앱 세부정보 설정
 
   * 앱 이름: HandsOnLab
   * 기본 언어: 한국어 - ko-KR
   * 앱 또는 게임: 게임
   * 유료 또는 무료: 무료
-  * 모든 약관 동의
-  * Click **앱 만들기**
+
+4. 모든 약관 동의
+5. Click **앱 만들기**
     
     .. image:: _static/image/2_1_2.png
 
-4. Play 게임 서비스 설정
+6. Play 게임 서비스 설정
 
   1. **Menu > Play 게임 서비스 > 설정 및 관리 > 설정**
-  2. **아니요, 게임에서 Google API를 사용하지 않습니다** 선택
-  3. 게임 이름 입력: HandsOnLab
+  2. Select **아니요, 게임에서 Google API를 사용하지 않습니다**
+  3. 게임 이름: HandsOnLab
   4. Click **만들기**
   
     .. image:: _static/image/2_1_3.png
@@ -107,7 +108,7 @@ Google Cloud Platform 설정
 
     .. image:: _static/image/google_console_user_auth_info.png
 
-  4. 설정값 추가
+  4. OAuth 클라이언트 ID 설정
   
     * 애플리케이션 유형: 웹 애플리케이션
     * 이름: 웹 클라이언트
@@ -133,15 +134,15 @@ Google Cloud Platform 설정
 
     .. image:: _static/image/google_console_user_auth_info.png
 
-  4. 설정값 추가
+  4. OAuth 클라이언트 ID 설정
   
     * 애플리케이션 유형: Android
     * 이름: Android 클라이언트
-    * 패키지 이름: 
+    * 패키지 이름: com.xxx.xxx
     * SHA-1 인증서 디지털 지문 확인
 
       1. cmd 열기
-      2. cd 명령어를 사용하여 handsonlab.keystore 파일 저장 경로로 이동
+      2. cd 명령어를 사용하여 handsonlab.keystore 파일이 있는 경로로 이동
       3. keytool 명령어 입력
 
         .. code-block::

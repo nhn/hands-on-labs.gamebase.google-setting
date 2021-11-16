@@ -18,7 +18,7 @@ Google 인증정보 추가
 
     .. image:: _static/image/console_leftmenu.png
 
-  3. Click **수정**
+  3. Select **수정**
 
     .. image:: _static/image/console_app_info.png
 
@@ -36,7 +36,7 @@ Google 인증정보 추가
 
     .. image:: _static/image/console_app_auth_info_add.png
 
-  3. 구글 인증정보를 입력
+  3. 구글 인증정보를 설정
 
     * Identity Provider: Google
     * Client ID: 이전 장에서 발급받은 웹 애플리케이션의 **클라이언트 ID**
